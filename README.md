@@ -58,7 +58,7 @@ Output looks like this:
     Logarithmic sum of big disconts   7.
     END.
 
-Now, one can decide if 64 big disconts around 00:48:34 and 53 big disconts around 01:24:29 with a lots of 'little' disconts mostly everywhere are acceptable or not (practically they disappear if option --discont-reverse isn't used). That's it.
+Now, one can decide if 64 big disconts around 00:48:34 and 53 big disconts around 01:24:29 with a lots of 'little' disconts mostly everywhere are acceptable or not (practically the 'little' disconts disappear if option --discont-reverse isn't used). That's it.
 
 If you are looking for a deep inspection analyser, you are wrong. This tool analyses the continuation counter of the transport stream and shows up, how often the continuation breaks.
 
