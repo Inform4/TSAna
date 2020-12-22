@@ -27,13 +27,13 @@ Output looks like this:
     Elapsed time  3.8972s
     Payload-Starts  309805
     Packets       16162788 in 3038604144 bytes.
-    PID     0        28726, discont       0 (big     0) err  0, scr  0, pri  0, pay       0, adp        0
+    PID     0        28726, discont       0 (big     0) err  0, scr  0, pri  0, pay   28726, adp        0
      00:00:00,000  packets        0 -    28725 :   0/1000 err on   28726 packets,      0 discont w/     0 big
      00:00:00,000  packets        0 -    28725 :   0/1000 err on   28726 packets,      0 big
-    PID   128        28726, discont       0 (big     0) err  0, scr  0, pri  0, pay       0, adp        0
+    PID   128        28726, discont       0 (big     0) err  0, scr  0, pri  0, pay   28726, adp        0
      00:00:00,000  packets        0 -    28725 :   0/1000 err on   28726 packets,      0 discont w/     0 big
      00:00:00,000  packets        0 -    28725 :   0/1000 err on   28726 packets,      0 big
-    PID   129     15062982, discont    8683 (big   120) err  0, scr  0, pri  0, pay       0, adp   411808
+    PID   129     15062982, discont    8683 (big   120) err  0, scr  0, pri  0, pay  197492, adp   411808
      00:00:00,000  packets        0 -   999999 :   2/1000 err on 1000000 packets,   1132 discont w/     0 big
      00:09:00,120  packets  1000000 -  1999999 :   1/1000 err on 1000000 packets,    271 discont w/     0 big
      00:16:43,560  packets  2000000 -  2999999 :   1/1000 err on 1000000 packets,    503 discont w/     0 big
@@ -50,7 +50,7 @@ Output looks like this:
      01:50:08,040  packets 13000000 - 13999999 :   2/1000 err on 1000000 packets,   1311 discont w/     1 big
      01:59:15,600  packets 14000000 - 14999999 :   2/1000 err on 1000000 packets,   1110 discont w/     0 big
      02:10:52,800  packets 15000000 - 15062981 :   1/1000 err on   62982 packets,     11 discont w/     0 big
-    PID   130      1042354, discont      30 (big     8) err  0, scr  0, pri  0, pay       0, adp    54859
+    PID   130      1042354, discont      30 (big     8) err  0, scr  0, pri  0, pay   54861, adp    54859
      00:00:00,000  packets        0 -   999999 :   1/1000 err on 1000000 packets,     30 discont w/     8 big
      00:00:00,000  packets  1000000 -  1042353 :   0/1000 err on   42354 packets,      0 discont w/     0 big
     Logarithmic sum of discontinues  13.
