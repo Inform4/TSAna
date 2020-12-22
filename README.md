@@ -11,6 +11,7 @@ Simple MPEG transport stream analyser to find discontinuities
     --discont-spread <n>            maximum value for spread of packets (default 1000000)
     --discont-capacity <n>          maximum value for entries of packets (default 100)
     --discont-stat {none,dis,big,both}   show statistic of discontinuities of packets (default none)
+    --discont-reverse                    count discontinuities even if in reverse (resend packets?)
     --return-value {big,dis,nul}    return value of program in floor(lg(count)), where count is sum of only big(default), all discont or nul(zero).
     ATTENTION: --filename parameter is NOT optional.
 
@@ -18,7 +19,7 @@ Always *\<filename\>* MUST contain an ISO 13818-1 transport stream. The applicat
 
 Output looks like this:
 
-    M:\Video6>tsana.exe --discont-stat dis --filename "Andromeda - Feinde an Bord   Der Geist des Abyss.ts"
+    M:\Video6>tsana.exe --discont-stat dis --filename "Andromeda - Feinde an Bord   Der Geist des Abyss.ts" --discont-reverse
     tsana: Gathering transport stream values (MPEG, ISO-13818-1).
     tsana: Andromeda - Feinde an Bord   Der Geist des Abyss.ts
     End. No more data to be read at 3038604144.
@@ -57,7 +58,7 @@ Output looks like this:
     Logarithmic sum of big disconts   7.
     END.
 
-Now one can decide if 64 big disconts around 00:48:34 and 53 big disconts around 01:24:29 with a lots of 'little' disconts mostly everywhere are acceptable or not. That's it.
+Now, one can decide if 64 big disconts around 00:48:34 and 53 big disconts around 01:24:29 with a lots of 'little' disconts mostly everywhere are acceptable or not (practically they disappear if option --discont-reverse isn't used). That's it.
 
 If you are looking for a deep inspection analyser, you are wrong. This tool analyses the continuation counter of the transport stream and shows up, how often the continuation breaks.
 
