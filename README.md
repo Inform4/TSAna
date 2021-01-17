@@ -58,7 +58,7 @@ Output looks like this:
     Logarithmic sum of big disconts   5.
     END.
 
-Now, decision is easier if for example 23 big disconts from 00:33:20 till 00:36:32,6 (spread 60s) are acceptable or not. That's it.
+Now, decision is easier if for example 23 big disconts from 00:33:20 till 00:35:42,6 (spread set to 10s !) are acceptable or not. That's it.
 
 If you are looking for a deep inspection analyser for elementary streams you are wrong. This tool analyses the continuation counter of an ISO-13818-1 transport stream only and shows how often the continuation counter breaks.
 
